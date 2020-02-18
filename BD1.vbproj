@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67E9B61D-BCAE-4C8B-AF2F-7BA85AEFAE67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BD1.My.MyApplication</StartupObject>
+    <RootNamespace>BD1</RootNamespace>
+    <AssemblyName>BD1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BD1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BD1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminGerirContas.Designer.vb">
+      <DependentUpon>AdminGerirContas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGerirContas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.vb">
+      <DependentUpon>AdminMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarDadosConta.Designer.vb">
+      <DependentUpon>AlterarDadosConta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarDadosConta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarMenuvb.Designer.vb">
+      <DependentUpon>AlterarMenuvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarMenuvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvaliarPedido.Designer.vb">
+      <DependentUpon>AvaliarPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AvaliarPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarregarSaldovb.Designer.vb">
+      <DependentUpon>CarregarSaldovb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarregarSaldovb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarConta.Designer.vb">
+      <DependentUpon>CriarConta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CriarConta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criticas.Designer.vb">
+      <DependentUpon>Criticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DadosPedidos.Designer.vb">
+      <DependentUpon>DadosPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DadosPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas.Designer.vb">
+      <DependentUpon>Estatisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirFuncionarios.Designer.vb">
+      <DependentUpon>GerirFuncionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GerirFuncionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoricoEmpregados.Designer.vb">
+      <DependentUpon>HistoricoEmpregados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistoricoEmpregados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PopularidadeHamburguers.Designer.vb">
+      <DependentUpon>PopularidadeHamburguers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopularidadeHamburguers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatingsCozinheirosEmpregados.Designer.vb">
+      <DependentUpon>RatingsCozinheirosEmpregados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RatingsCozinheirosEmpregados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RealizarPedido.Designer.vb">
+      <DependentUpon>RealizarPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminGerirContas.resx">
+      <DependentUpon>AdminGerirContas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarDadosConta.resx">
+      <DependentUpon>AlterarDadosConta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarMenuvb.resx">
+      <DependentUpon>AlterarMenuvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvaliarPedido.resx">
+      <DependentUpon>AvaliarPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarregarSaldovb.resx">
+      <DependentUpon>CarregarSaldovb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriarConta.resx">
+      <DependentUpon>CriarConta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criticas.resx">
+      <DependentUpon>Criticas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DadosPedidos.resx">
+      <DependentUpon>DadosPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas.resx">
+      <DependentUpon>Estatisticas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirFuncionarios.resx">
+      <DependentUpon>GerirFuncionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoricoEmpregados.resx">
+      <DependentUpon>HistoricoEmpregados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopularidadeHamburguers.resx">
+      <DependentUpon>PopularidadeHamburguers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RatingsCozinheirosEmpregados.resx">
+      <DependentUpon>RatingsCozinheirosEmpregados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealizarPedido.resx">
+      <DependentUpon>RealizarPedido.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13-132538_burger-svg-png-icon-free-download-545640-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburger-3278191_960_720.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
